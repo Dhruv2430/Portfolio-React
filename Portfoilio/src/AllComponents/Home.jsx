@@ -1,65 +1,124 @@
-import React from 'react'
+import React, { useEffect, useState } from 'react'
 import Navbar from './Navbar'
-import item from './../assets/Me.png'
+import profileImage from './../assets/Me.png'
 import Arrow from './../assets/Arrow.png'
 import SkillsSection from './SkillsSection'
 import Contact from './Contact'
 import Footer from './Footer'
+import Project from './Project'
+import { motion } from 'framer-motion'
 
 const Home = () => {
+    const [isVisible, setIsVisible] = useState(false);
+
+    useEffect(() => {
+        setIsVisible(true);
+    }, []);
+
     return (
-        <div className='bg-[#11071F] min-h-screen'>
+        <div className='bg-gradient-to-b from-[#11071F] to-[#1a0f29] min-h-screen text-white'>
             <Navbar />
 
-            <div className='pt-20 md:pt-28 lg:pt-36 pl-0 md:pl-72'>
-                <main className='flex flex-col md:flex-row gap-8 md:gap-12 lg:gap-20 items-center md:items-start'>
-
-                    <div className='relative w-48 h-48 sm:w-56 sm:h-56 mx-auto md:mx-0'>
-                        <div className='z-10 absolute inset-0'>
-                            <img src={item} alt="Me" className='w-full h-full object-cover' />
-                        </div>
-                        <div className='h-full w-full bg-blue-700 blur-3xl absolute inset-0'></div>
+            {/* Hero Section */}
+            <div className='container mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-28 lg:pt-36 '>
+                <motion.div 
+                    initial={{ opacity: 0 }}
+                    animate={{ opacity: isVisible ? 1 : 0 }}
+                    transition={{ duration: 0.8 }}
+                    className='flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16'
+                >
+                    {/* Profile Image */}
+                  <div className='lg:pl-48 flex flex-row'>
+                  <div className='relative w-56 h-56 sm:w-64 sm:h-64 flex-shrink-0'>
+                        <motion.div 
+                            initial={{ scale: 0.9 }}
+                            animate={{ scale: 1 }}
+                            transition={{ duration: 0.5, delay: 0.3 }}
+                            className='z-10 absolute inset-0  overflow-hidden  '
+                        >
+                            <img src={profileImage} alt="Dhruv Panchal" className='w-full h-full object-cover' />
+                        </motion.div>
+                        <div className='h-full w-full bg-blue-600 blur-3xl absolute inset-0 opacity-60'></div>
                     </div>
 
-
-                    <div className='relative text-center md:text-left mt-8 md:mt-0'>
-
+                    {/* Hero Text Content */}
+                    <div className='relative text-center md:text-left max-w-2xl ' >
                         <img
                             src={Arrow}
                             alt=""
-                            className='hidden md:block absolute -left-10 top-4 lg:top-0 w-8 lg:w-auto transform -translate-x-1/2'
+                            className='hidden md:block absolute -left-16 top-4 w-12 transform rotate-12'
                         />
 
-                        <h1 className="font-[Preahvihear] text-white text-lg sm:text-xl">
-                            Hello! I Am <span className='text-blue-500'>Dhruv Panchal</span>
-                        </h1>
+                        <motion.div
+                            initial={{ y: 20, opacity: 0 }}
+                            animate={{ y: 0, opacity: 1 }}
+                            transition={{ duration: 0.5, delay: 0.4 }}
+                        >
+                            <h3 className="font-[Preahvihear] text-blue-400 text-xl sm:text-2xl tracking-wider">
+                                Hello! I Am <span className='text-blue-300'>Dhruv Panchal</span>
+                            </h3>
 
-                        <h2 className='text-white text-2xl sm:text-3xl md:text-4xl mt-4 md:mt-10 font-[Preahvihear]'>
-                            You can't judge a book
-                            <span className='block'> by its first chapter</span>
+                            <h1 className='text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl mt-4 md:mt-6 font-[Preahvihear] leading-tight'>
+                                You can't judge a book
+                                <span className='block text-blue-300'> by its first chapter</span>
+                            </h1>
+
+                            <p className='text-gray-300 mt-6 text-base sm:text-lg font-[Preahvihear]'>
+                                If the first impression doesn't catch your eye, what will?
+                            </p>
+
+                            <div className='mt-8 flex flex-wrap gap-4 justify-center md:justify-start'>
+                                <a href="#projects" className='px-6 py-3 bg-blue-600 hover:bg-blue-700 text-white rounded-md font-medium transition-all duration-300 transform hover:scale-105'>
+                                    View Projects
+                                </a>
+                                <a href="#contact" className='px-6 py-3 border border-blue-500 text-blue-400 hover:bg-blue-900/30 rounded-md font-medium transition-all duration-300'>
+                                    Contact Me
+                                </a>
+                            </div>
+                        </motion.div>
+                    </div>
+                  </div>
+                </motion.div>
+
+                {/* About Me Section */}
+                <motion.section 
+                    initial={{ opacity: 0, y: 40 }}
+                    animate={{ opacity: isVisible ? 1 : 0, y: isVisible ? 0 : 40 }}
+                    transition={{ duration: 0.8, delay: 0.6 }}
+                    className="mt-28 md:mt-36 mb-20"
+                >
+                    <div className="mx-auto max-w-4xl mt-50">
+                        <h2 className="text-white font-[Preahvihear] text-3xl sm:text-4xl md:text-5xl mb-6">
+                            I'm a <span className="text-blue-400">Full-stack developer</span>
                         </h2>
-
-                        <h6 className='text-white mt-4 md:mt-6 text-sm sm:text-base font-[Preahvihear]'>
-                            If the first impression doesn't catch your eye, what will?
-                        </h6>
+                        
+                        <div className="mt-8 p-6 sm:p-8 bg-white/5 backdrop-blur-sm rounded-xl border border-white/10">
+                            <p className="text-gray-300 text-lg leading-relaxed">
+                                Hi! I'm <span className="text-blue-300 font-medium">Dhruv Panchal</span> — a full-stack developer who loves building modern, responsive web interfaces using React, Tailwind CSS, and ShadCN UI.
+                                I'm currently pursuing my B.Tech at Silver Oak University and working with JWT authentication and Docker for backend development.
+                            </p>
+                            <p className="text-gray-300 text-lg mt-4 leading-relaxed">
+                                I enjoy creating complete web applications, from frontend to backend, and turning ideas into real experiences.
+                                My passion lies in crafting solutions that combine beautiful design with powerful functionality.
+                            </p>
+                            
+                            <div className="mt-8 flex flex-wrap gap-3">
+                                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">React</span>
+                                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Tailwind CSS</span>
+                                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Node.js</span>
+                                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">MongoDB</span>
+                                <span className="px-3 py-1 bg-blue-900/30 text-blue-300 rounded-full text-sm">Docker</span>
+                            </div>
+                        </div>
                     </div>
-                </main>
-
-                <section className="mt-16 md:mt-24 font-[Preahvihear]">
-                    <div className="px-4 md:px-8 lg:px-16">
-                        <h1 className="text-white font text-3xl sm:text-4xl md:text-5xl">I'm a Full-stack developer.</h1>
-                        <p className="text-white mt-8 sm:text-base md:text-lg lg:text-s pr-0 sm:pr-4 md:pr-16 lg:pr-64">
-                            Hi! I'm Dhruv Panchal — a full-stack developer who loves building modern, responsive web interfaces using React, Tailwind CSS, and ShadCN UI.
-                            I’m currently pursuing my B.Tech at Silver Oak University and working with JWT authentication and Docker for backend development.
-                            I enjoy creating complete web applications, from frontend to backend, and turning ideas into real experiences.
-                        </p>
-                    </div>
-                </section>
-
+                </motion.section>
             </div>
-            <SkillsSection/>
-            <Contact/>
-        <Footer/>
+
+            {/* Other Sections */}
+            <SkillsSection />
+            <Project />
+            <Contact />
+            <Footer />
         </div>
     )
 }
