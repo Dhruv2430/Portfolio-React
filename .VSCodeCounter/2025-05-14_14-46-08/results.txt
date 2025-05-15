@@ -1,0 +1,59 @@
+Date : 2025-05-14 14:46:08
+Directory : /Users/dhruvpanchal/Desktop/Final portfolio
+Total : 21 files,  6770 codes, 25 comments, 119 blanks, all 6914 lines
+
+Languages
++----------------+------------+------------+------------+------------+------------+
+| language       | files      | code       | comment    | blank      | total      |
++----------------+------------+------------+------------+------------+------------+
+| JSON           |          2 |      6,025 |          0 |          2 |      6,027 |
+| JavaScript JSX |         12 |        679 |         23 |        106 |        808 |
+| JavaScript     |          2 |         43 |          2 |          4 |         49 |
+| HTML           |          1 |         15 |          0 |          1 |         16 |
+| Markdown       |          1 |          5 |          0 |          4 |          9 |
+| XML            |          2 |          2 |          0 |          0 |          2 |
+| CSS            |          1 |          1 |          0 |          2 |          3 |
++----------------+------------+------------+------------+------------+------------+
+
+Directories
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                         | files      | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                            |         21 |      6,770 |         25 |        119 |      6,914 |
+| Portfoilio                                                                                   |         21 |      6,770 |         25 |        119 |      6,914 |
+| Portfoilio (Files)                                                                           |          6 |      6,088 |          2 |         11 |      6,101 |
+| Portfoilio/public                                                                            |          1 |          1 |          0 |          0 |          1 |
+| Portfoilio/src                                                                               |         14 |        681 |         23 |        108 |        812 |
+| Portfoilio/src (Files)                                                                       |          3 |         39 |          0 |         13 |         52 |
+| Portfoilio/src/AllComponents                                                                 |          9 |        601 |         23 |         86 |        710 |
+| Portfoilio/src/FramerMotion                                                                  |          1 |         40 |          0 |          9 |         49 |
+| Portfoilio/src/assets                                                                        |          1 |          1 |          0 |          0 |          1 |
++----------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| filename                                                                                     | language       | code       | comment    | blank      | total      |
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/README.md                             | Markdown       |          5 |          0 |          4 |          9 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/eslint.config.js                      | JavaScript     |         37 |          0 |          2 |         39 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/index.html                            | HTML           |         15 |          0 |          1 |         16 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/package-lock.json                     | JSON           |      5,994 |          0 |          1 |      5,995 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/package.json                          | JSON           |         31 |          0 |          1 |         32 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/public/vite.svg                       | XML            |          1 |          0 |          0 |          1 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/Contact.jsx         | JavaScript JSX |         80 |          2 |         11 |         93 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/Footer.jsx          | JavaScript JSX |         62 |          4 |          8 |         74 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/Home.jsx            | JavaScript JSX |         91 |          4 |         17 |        112 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/ME.jsx              | JavaScript JSX |         14 |          0 |          3 |         17 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/Navbar.jsx          | JavaScript JSX |         40 |          0 |          9 |         49 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/Project.jsx         | JavaScript JSX |         62 |          1 |          9 |         72 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/ScrollEmoji.jsx     | JavaScript JSX |         26 |          1 |          6 |         33 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/ShowProjectCard.jsx | JavaScript JSX |         71 |          6 |         10 |         87 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/AllComponents/SkillsSection.jsx   | JavaScript JSX |        155 |          5 |         13 |        173 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/App.jsx                           | JavaScript JSX |         12 |          0 |          6 |         18 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/FramerMotion/SplitHeading.jsx     | JavaScript JSX |         40 |          0 |          9 |         49 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/assets/react.svg                  | XML            |          1 |          0 |          0 |          1 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/index.css                         | CSS            |          1 |          0 |          2 |          3 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/src/main.jsx                          | JavaScript JSX |         26 |          0 |          5 |         31 |
+| /Users/dhruvpanchal/Desktop/Final portfolio/Portfoilio/vite.config.js                        | JavaScript     |          6 |          2 |          2 |         10 |
+| Total                                                                                        |                |      6,770 |         25 |        119 |      6,914 |
++----------------------------------------------------------------------------------------------+----------------+------------+------------+------------+------------+
