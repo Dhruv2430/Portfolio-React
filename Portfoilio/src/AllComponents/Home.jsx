@@ -17,10 +17,10 @@ const Home = () => {
 
     return (
         <div className='bg-gradient-to-b from-[#11071F] to-[#1a0f29] min-h-screen text-white'>
-            {/* Hero Section */}
+
             <div className='container mx-auto px-4 sm:px-6 lg:px-0.5 pt-20 md:pt-28 lg:pt-20'>
                 <div className='flex flex-col md:flex-row items-center md:items-start gap-9 md:gap-16'>
-                    {/* Profile Image */}
+
                     <div className='container mx-auto px-4 sm:px-6 lg:px-8 pt-20 md:pt-28 lg:pt-36'>
                         <div className='flex flex-col md:flex-row items-center md:items-start gap-10 md:gap-16'>
                             <div className='lg:pl-48 flex justify-center w-full md:w-auto'>
@@ -70,7 +70,6 @@ const Home = () => {
                 </div>
 
 
-                {/* About Me Section */}
                 <section className="mt-36 md:mt-36  mb-20">
                     <div className="mx-auto max-w-4xl mt-56">
                         <h2 className="text-white font-[Preahvihear] text-3xl sm:text-4xl md:text-5xl mb-6">

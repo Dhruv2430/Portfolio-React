@@ -4,8 +4,10 @@ import './index.css'
 import App from './App.jsx'
 import { createBrowserRouter, RouterProvider } from 'react-router-dom'
 import Home from './AllComponents/Home.jsx'
-import ME from './AllComponents/ME.jsx'
+
 import Allprojectshow from './AllComponents/Allprojectshow.jsx'
+import Me from './AllComponents/ME.jsx'
+import FullContact from './AllComponents/FullContact.jsx'
 
 
 const router = createBrowserRouter([
@@ -18,11 +20,14 @@ const router = createBrowserRouter([
         element:<Home/>
       },{
         path:'/Dhruv',
-        element:<ME/>
+        element:<Me/>
       }
       ,{
         path:'/allProject',
         element:<Allprojectshow/>
+      },{
+        path:'/Contact',
+        element:<FullContact/>
       }
     ]
   }

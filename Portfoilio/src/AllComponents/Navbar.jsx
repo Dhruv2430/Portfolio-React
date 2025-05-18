@@ -17,8 +17,12 @@ const Navbar = () => {
           <NavLink to={"/Dhruv"} >
             <li>About</li>
           </NavLink>
-          <NavLink to={"/allProject"}><li>Project</li></NavLink>
-          <li>Contact</li>
+          <NavLink to={"/allProject"}>
+            <li>Project</li>
+          </NavLink>
+          <NavLink to={'/Contact'}>
+            <li>Contact</li>
+          </NavLink>
 
         </ul>
 
@@ -37,8 +41,12 @@ const Navbar = () => {
           <NavLink to={"/Dhruv"} >
             <li>About</li>
           </NavLink>
-          <NavLink to={"/allProject"}><li>Project</li></NavLink>
-          <li>Contact</li>
+          <NavLink to={"/allProject"}>
+            <li>Project</li>
+          </NavLink>
+          <NavLink to={'/Contact'}>
+            <li>Contact</li>
+          </NavLink>
         </ul>
       )}
     </nav>
