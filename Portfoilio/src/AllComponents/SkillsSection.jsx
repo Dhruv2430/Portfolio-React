@@ -28,7 +28,7 @@ const SkillsSection = () => {
     frontend: {
       title: 'Frontend Development',
       description: 'Creating responsive and interactive user experiences',
-      skills: ['html', 'css', 'tailwind', 'bootstrap', 'react', 'redux', 'nextjs']
+      skills: ['html', 'css', 'tailwind', 'bootstrap', 'react', 'redux', 'shadcn']
     },
     backend: {
       title: 'Backend Development',
@@ -38,7 +38,7 @@ const SkillsSection = () => {
     tools: {
       title: 'Development Tools',
       description: 'Tools that enhance my development workflow',
-      skills: ['docker', 'aws', 'netlify', 'git', 'github', 'gitlab', 'npm', 'vscode', 'wordpress']
+      skills: ['docker', 'git', 'github', 'gitlab', 'npm', 'vscode', 'wordpress']
     }
   };
 
@@ -51,14 +51,14 @@ const SkillsSection = () => {
       id="skills-section" 
       className="min-h-screen bg-[#11071F] py-12 sm:py-16 md:py-24 relative overflow-hidden font-[Preahvihear]"
     >
-      {/* Animated background elements */}
+      
       <div className="absolute top-0 left-0 w-full h-full">
         <div className="absolute top-1/4 left-1/4 w-64 h-64 bg-blue-600/10 rounded-full blur-3xl"></div>
         <div className="absolute bottom-1/3 right-1/3 w-80 h-80 bg-indigo-600/10 rounded-full blur-3xl"></div>
       </div>
 
       <div className="container mx-auto px-4 sm:px-6 relative z-10">
-        {/* Section heading with animated border */}
+      
         <div className={`text-center mb-10 sm:mb-16 md:mb-20 transform transition-all duration-1000 ${isVisible ? 'translate-y-0 opacity-100' : 'translate-y-10 opacity-0'}`}>
           <h2 className="inline-block text-white text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold relative">
             My Technical Skills
@@ -69,7 +69,7 @@ const SkillsSection = () => {
           </p>
         </div>
 
-        {/* 3D Rotating Tabs */}
+       
         <div className="flex justify-center mb-16 overflow-x-auto pb-4 px-2">
           <div className="bg-gray-900/60 backdrop-blur-sm p-1 sm:p-2 rounded-full inline-flex shadow-lg shadow-blue-900/20 flex-wrap justify-center">
             {Object.keys(skillsData).map((tab) => (
@@ -91,7 +91,7 @@ const SkillsSection = () => {
           </div>
         </div>
 
-        {/* Skills Content with Animation */}
+   
         <div className="max-w-6xl mx-auto">
           {Object.keys(skillsData).map((category) => (
             <div
@@ -143,7 +143,7 @@ const SkillsSection = () => {
         </div>
       </div>
 
-      {/* CSS Animations */}
+    
       <style jsx>{`
         @keyframes grow {
           from { width: 0%; }

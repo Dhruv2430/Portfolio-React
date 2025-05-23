@@ -33,27 +33,19 @@ const FullContact = () => {
         message: ''
       });
       
-     
       setTimeout(() => setSubmitted(false), 3000);
     }, 1500);
   };
 
   return (
     <div className="bg-gradient-to-b from-[#11071F] to-[#1a0f29] min-h-screen text-white py-16 px-4 relative overflow-hidden">
-
       <div className="absolute inset-0 overflow-hidden">
-
         <div className="h-96 w-96 bg-gradient-to-r from-blue-600/30 to-purple-600/30 rounded-full blur-3xl absolute top-1/4 left-1/4 transform -translate-x-1/2 -translate-y-1/2 animate-pulse"></div>
-        
-
         <div className="h-80 w-80 bg-gradient-to-r from-indigo-600/20 to-pink-600/20 rounded-full blur-3xl absolute bottom-1/4 right-1/4 transform translate-x-1/2 translate-y-1/2 animate-pulse" style={{animationDelay: '1s', animationDuration: '8s'}}></div>
-        
         <div className="h-64 w-64 bg-gradient-to-r from-purple-500/20 to-cyan-500/20 rounded-full blur-3xl absolute top-3/4 left-2/3 transform -translate-x-1/2 -translate-y-1/2 animate-pulse" style={{animationDelay: '2s', animationDuration: '10s'}}></div>
       </div>
       
-
       <div className="container mx-auto max-w-5xl relative z-10">
-   
         <div className="text-center mb-12">
           <h1 className="text-4xl md:text-5xl font-bold mb-4 bg-clip-text text-transparent bg-gradient-to-r from-blue-300 to-purple-400">Get In Touch</h1>
           <p className="text-gray-300 max-w-2xl mx-auto">
@@ -62,7 +54,6 @@ const FullContact = () => {
         </div>
         
         <div className="flex flex-col lg:flex-row gap-8">
-          {/* Contact Info */}
           <div className="lg:w-1/3">
             <div className="h-full bg-white/5 backdrop-blur-xl rounded-2xl p-8 border border-white/10 shadow-[0_8px_30px_rgb(0,0,0,0.12)] transition-all duration-500 hover:border-white/20 group">
               <h2 className="text-2xl font-bold mb-8 bg-clip-text text-transparent bg-gradient-to-r from-purple-300 to-blue-300">Contact Information</h2>
